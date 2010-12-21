@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<!-- This is the Working version -->
+		<title> Sample Widget</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- below not needed-->
+		<!--script language="javascript" type="text/javascript" src="basic.js"></script-->
+  		<!-- Included for tabs: start -->
+		<!--link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/-->
+		<link href="jquery-ui.css" rel="stylesheet" type="text/css"/>
+  		<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script-->
+  		<script src="jquery-1.4.2.min.js"></script>
+ 		<!--script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script-->
+ 		<script src="jquery-ui-1.8.2.custom.min.js"></script>
+  		<!-- Included for tabs: end -->
+    	<!--link rel="stylesheet" href="basic.css" type="text/css"-->
+    	<META NAME="Generator" CONTENT="Nokia WRT plug-in for Aptana Studio 2.3.0" />
+  		<script>
+  			$(function() {
+    			$("#tabs").tabs();
+				
+				$("#datepicker").datepicker({
+					onSelect: function(dateText, inst) {
+						$("#result").text("You selected " + dateText)}
+				});
+				
+  			});
+//			init();
+  		</script>	
+	</head>
+<!--body style="font-size:62.5%;"-->
+<body style="font-size:85%;">
+  
+<div id="tabs">
+    <ul>
+        <li><a href="#fragment-1">
+			<div><img src="img/contacts_icon.png" alt="" align="center"/></div>
+			<div id="c" >Contact Finder</div>
+        </a></li>
+        <li><a href="#fragment-2">
+ 			<div><img src="img/Online_menu.png" alt="" align="center"/></div>
+			<div id="s" >My Status</div>
+        </a></li>
+        <li><a href="#fragment-3">
+			<div><img src="img/settings_icon.png" alt="" align="center"/></div>
+			<div id="a" >Settings</div>
+		</a></li>
+    </ul>
+    <div id="fragment-1">
+        <p>First tab is active by default:</p>
+		<div type="text" id="datepicker" style="font-size:100%;"></div>
+		<div style="font-size:100%;" id="result"></div>
+    </div>
+    <div id="fragment-2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+    <div id="fragment-3">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+</div>
+</body>
+</html>
+
